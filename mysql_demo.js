@@ -12,7 +12,7 @@ con.connect ((err)=>{
        console.log(err);
             }
             console.log("Databse connected");
-            let sql="select * from city";
+            let sql="select * from city where name like 'Delhi'";
             con.query(sql, (err,res)=>{
                 if (err)
                 {console.log(err);}
